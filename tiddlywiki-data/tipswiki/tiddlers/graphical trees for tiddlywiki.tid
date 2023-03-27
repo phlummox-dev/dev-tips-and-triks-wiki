@@ -1,0 +1,14 @@
+created: 20230327031859921
+creator: phlummox
+modified: 20230327044701974
+modifier: phlummox
+tags: tiddlywiki draft
+title: graphical trees for tiddlywiki
+type: text/vnd.tiddlywiki
+
+
+graphviz/graphical style trees for tiddlywiki - see https://ihm4u.github.io/tw5plugs/#summary
+
+see also https://github.com/ihm4u/tw5plugs/tree/04bf47b5dad7be0d3085c2da43d3742f84a14157
+
+and https://github.com/tobibeer/tw5-plugins for underlying code.

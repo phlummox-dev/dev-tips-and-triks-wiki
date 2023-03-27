@@ -1,0 +1,11 @@
+created: 20230326162836729
+creator: phlummox
+modified: 20230326163001159
+modifier: phlummox
+tags: 
+title: Tweak the animation speed
+type: text/vnd.tiddlywiki
+
+Look under Control Panel / Info / Basics / Animation duration.
+
+If you find the default too slow, somewhere around 200–250 might be better.

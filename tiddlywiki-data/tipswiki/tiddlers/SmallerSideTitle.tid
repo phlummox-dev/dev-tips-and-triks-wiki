@@ -1,0 +1,11 @@
+created: 20230326112859268
+creator: phlummox
+modified: 20230326153234387
+modifier: phlummox
+tags: $:/tags/Stylesheet
+title: SmallerSideTitle
+type: text/vnd.tiddlywiki
+
+    html .tc-site-title {
+       font-size: 1.5rem;
+    }

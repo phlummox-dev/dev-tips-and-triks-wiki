@@ -1,0 +1,13 @@
+created: 20230326071907739
+creator: phlummox
+modified: 20230326072021458
+modifier: phlummox
+tags: tiddlywiki
+title: changing favicon
+type: text/vnd.tiddlywiki
+
+easiest method:
+
+* drag and drop an image file (png, svg, ico etc) to top of page to import it
+* import it
+* rename it to $:/favicon.ico

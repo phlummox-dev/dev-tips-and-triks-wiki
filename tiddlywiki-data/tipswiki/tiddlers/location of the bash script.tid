@@ -1,0 +1,10 @@
+created: 20230326142342680
+creator: phlummox
+modified: 20230326142419516
+modifier: phlummox
+tags: bash
+title: location of the bash script
+type: text/vnd.tiddlywiki
+
+The variable `BASH_SOURCE` should reliably contain the relative or
+absolute path to the file being executed.

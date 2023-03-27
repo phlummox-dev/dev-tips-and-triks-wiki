@@ -1,0 +1,9 @@
+created: 20230327045429004
+creator: phlummox
+modified: 20230327045612057
+modifier: phlummox
+tags: draft
+title: todo
+type: text/vnd.tiddlywiki
+
+prevent the [[TableOfContents]] from displaying empty first-level tags. (empty because e.g. all tiddlers in them have 'draft' in their tags.) can probably use list widget to do this. do macros have an if-then syntax, or must we use the widgets?

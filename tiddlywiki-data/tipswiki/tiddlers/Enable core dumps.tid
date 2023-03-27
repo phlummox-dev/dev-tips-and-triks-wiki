@@ -1,0 +1,15 @@
+created: 20230326142558018
+creator: phlummox
+modified: 20230326142657400
+modifier: phlummox
+tags: ubuntu
+title: Enable core dumps
+type: text/vnd.tiddlywiki
+
+```
+$ ulimit -c unlimited
+# stop apport
+sudo systemctl stop apport.service 
+# if desired, disable apport permanently
+sudo systemctl disable apport.service 
+```

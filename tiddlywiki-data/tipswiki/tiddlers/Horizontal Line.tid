@@ -1,0 +1,12 @@
+created: 20230326073934854
+creator: phlummox
+list-after: $:/core/ui/ViewTemplate/title
+modified: 20230327045747335
+modifier: phlummox
+tags: $:/tags/ViewTemplate
+title: Horizontal Line
+type: text/vnd.tiddlywiki
+
+<$list filter='[is[current]]'>
+<div class="tc-tab-divider "></div>
+</$list>

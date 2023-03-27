@@ -1,0 +1,59 @@
+comments: Can't freely add HTML `<!--` style comments in this tiddler, or the macros break. ridiculous. It has to be in the BODY of a macro.
+created: 20230326121422379
+creator: phlummox
+modified: 20230327035404402
+modifier: phlummox
+tags: $:/tags/Macro
+title: CustomTocMacros
+type: text/vnd.tiddlywiki
+
+
+\define innerToc(tag)
+<!-- innerToc: takes a tag, displays a `<ul>` of all non-draft tiddlers matching that tag -->
+<ul class="tc-toc toc-selective-expandable">
+<$list filter="[tag[$tag$]sort[title]] -[tag[draft]]">
+<li class="toc-item">
+<$link to={{{ [<currentTiddler>get[target]else<currentTiddler>] }}}><$view field='caption'><$view field='title'/></$view></$link>
+</li>
+</$list>
+<ul>
+\end
+
+
+\define xtoc()
+<!-- generates a top-level list consisting of all tags, with expand/collapse icons on each.
+   innerToc() is called to generate the sub-list for each
+-->
+<div class="tc-table-of-contents">
+<ol class="tc-toc toc-selective-expandable">
+<$list filter="""[tags[]!is[system]sort[title]]""">
+  <$vars item=<<currentTiddler>> >
+  <li>
+      <!-- item and sublist -->
+      <$qualify name="toc-state" title={{{ [[$:/state/toc]addsuffix<__path__>addsuffix[-]addsuffix<currentTiddler>] }}}>
+        <!-- "expand"/"close" icons -->
+         <$reveal type="nomatch" stateTitle=<<toc-state>> text="open">
+          <$button setTitle=<<toc-state>> setTo="open" class="tc-btn-invisible tc-popup-keep">
+            {{$:/core/images/right-arrow}}
+          </$button>
+        </$reveal>
+        <$reveal type="match" stateTitle=<<toc-state>> text="open">
+          <$button setTitle=<<toc-state>> setTo="close" class="tc-btn-invisible tc-popup-keep">
+            {{$:/core/images/down-arrow}}
+          </$button>
+        </$reveal>
+       <!-- done "expand"/"close" icons -->
+       <!-- the tag -->
+        <<item>> 
+        <br>
+         <$reveal type="match" stateTitle=<<toc-state>> text="open">
+             <$macrocall $name="innerToc" tag=<<item>> />
+        </$reveal>
+       </$qualify>
+  <!-- done item and sublist -->
+  </li>
+  </$vars>
+</$list>
+</ol>
+</div>
+\end

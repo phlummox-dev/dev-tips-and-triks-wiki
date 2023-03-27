@@ -1,0 +1,35 @@
+created: 20230326103153390
+creator: phlummox
+modified: 20230326153236965
+modifier: phlummox
+tags: 
+title: CenterStoryRiverStyle
+type: text/vnd.tiddlywiki
+
+/* shift left col ("story-river") to center */
+
+@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+
+	html .tc-page-container {
+		text-align: center;
+	}
+
+	html .tc-story-river {
+		position: relative;
+		width: 770px;
+		padding: 42px;
+		margin-left: auto;
+        margin-right: auto;
+		text-align: left;
+	}
+
+	html .tc-sidebar-scrollable {
+		text-align: left;
+		left: 50%;
+		right: 0;
+		margin-left: 343px;
+	}
+
+}
+
+

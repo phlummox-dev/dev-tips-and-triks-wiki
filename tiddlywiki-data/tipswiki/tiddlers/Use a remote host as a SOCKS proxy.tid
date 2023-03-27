@@ -1,0 +1,21 @@
+created: 20230326142200838
+creator: phlummox
+modified: 20230326142307527
+modifier: phlummox
+tags: ssh
+title: Use a remote host as a SOCKS proxy
+type: text/vnd.tiddlywiki
+
+A little-known feature of ssh.
+
+Suppose you want to access the web via some host you have ssh access to - call it `myserver.example.com`.
+You can use the "dynamic forwarding" feature of ssh to do this.
+
+Let 9000 be the local port you want to use to connect to the proxy.
+
+```
+$ ssh -D 0.0.0.0:9000 myserver.example.com
+```
+
+You can now set up your browser with port 9000 as a SOCKS proxy, and
+traffic will go via the remote host.

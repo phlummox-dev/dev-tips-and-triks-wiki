@@ -1,0 +1,57 @@
+created: 20230326084438720
+creator: phlummox
+modified: 20230326135913387
+modifier: phlummox
+tags: $:/tags/Stylesheet
+title: NavBarStyle
+type: text/vnd.tiddlywiki
+
+/* if we wanted nav links in here as well, could add more rules - convention is to us ul/li for links
+*/
+
+.tc-topbar-left {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #446e9b;
+  border-color: #345578;
+  border-width: 0 0 1px;
+}
+
+/* color/style for top nav bar */
+.top-nav-bar {
+
+}
+
+/* layout nav bar */
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #bbb;
+}
+
+nav  div {
+  font-weight: 300;
+  font-size: 2.35em;
+  line-height: 1.35em;
+}
+
+nav  span {
+  margin-top: 0.5rem;
+  font-size: 1.35em;
+}
+
+/* stop the left col ("river") from bumping into navbar */
+.tc-story-river {
+  margin-top: 3rem;
+}
+
+/* stop the right sidebar from bumping into navbar */
+.tc-sidebar-header {
+  margin-top: 1.5rem;
+}

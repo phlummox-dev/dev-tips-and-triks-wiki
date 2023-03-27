@@ -1,0 +1,18 @@
+created: 20230326055602925
+creator: phlummox
+modified: 20230326064029515
+modifier: phlummox
+tags: tiddlywiki
+title: sign with correct username
+type: text/vnd.tiddlywiki
+
+* if only one person is using the wiki - run the `--listen` command with a specified username, if you want changes to be recorded as made by that user
+* e.g.
+
+
+```
+tiddlywiki tipswiki --listen anon-username=phlummox host=0.0.0.0
+```
+
+
+

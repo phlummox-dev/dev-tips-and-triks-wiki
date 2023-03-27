@@ -1,0 +1,8 @@
+created: 20230326152557595
+creator: phlummox
+modified: 20230326152603045
+modifier: phlummox
+title: $:/config/markdown/renderWikiTextPragma
+type: text/vnd.tiddlywiki
+
+\rules only html image macrocallinline syslink transcludeinline wikilink prettylink filteredtranscludeblock macrocallblock transcludeblock

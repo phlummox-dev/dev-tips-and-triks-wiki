@@ -1,0 +1,11 @@
+created: 20230326074509970
+creator: phlummox
+modified: 20230326074821699
+modifier: phlummox
+tags: tiddlywiki
+title: Adding things to the control panel
+type: text/vnd.tiddlywiki
+
+If you go look at the contents of the "Control Panel" tiddler, it looks for things with the tag "$:/tags/ControlPanel".
+
+So just create a tiddler with that tag.

@@ -1,0 +1,12 @@
+created: 20230326151243237
+creator: phlummox
+modified: 20230326151426193
+modifier: phlummox
+tags: tiddlywiki
+title: customizing the sidebar
+type: text/vnd.tiddlywiki
+
+To customize the Tabs that appear in the Side Bar, either (?)
+
+* edit the tiddler $:/core/ui/SideBarLists, OR
+* add a new tiddler with the tag `$:/tags/SideBar`.

@@ -1,0 +1,16 @@
+created: 20230326090807094
+creator: phlummox
+modified: 20230326135930957
+modifier: phlummox
+tags: $:/tags/TopLeftBar
+title: NavBar
+type: text/vnd.tiddlywiki
+
+<!--
+By creating tiddlers with the tag $:/tags/TopLeftBar, we can have them spliced into the "top-bar" portion of the page. If we give the HTML content they contain the right css classes, we can then define style rules elsewhere to style it properly -- see e.g. NavBarStyle -->
+<nav class="top-nav-bar">
+<div>
+{{$:/SiteTitle}}
+</div>
+<span style="display: block">{{$:/SiteSubtitle}}</span>
+</nav>

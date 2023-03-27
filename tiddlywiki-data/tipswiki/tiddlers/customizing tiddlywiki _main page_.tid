@@ -1,0 +1,10 @@
+created: 20230326072923798
+creator: phlummox
+modified: 20230326092153233
+modifier: phlummox
+tags: tiddlywiki
+title: customizing tiddlywiki "main page"
+type: text/vnd.tiddlywiki
+
+* the template used to construct the page as a whole is the shadow tiddler $:/core/ui/PageTemplate, so that can be overridden if needed.
+* If we put HTML content in a tiddler and give it the right tags, we can put it at specified spots in the page. See e.g. [[NavBar]] and the comments in it.

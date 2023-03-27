@@ -1,0 +1,33 @@
+created: 20230326074739677
+creator: phlummox
+modified: 20230326153403895
+modifier: phlummox
+tags: $:/tags/ControlPanel
+title: More tweaks
+type: text/vnd.tiddlywiki
+
+<!--
+This tiddler gets added to the Control Panel because it has the tag $:/tags/ControlPanel
+
+The checkboxes are used to toggle whether particular magic /tags/ (like $:/tags/ViewTemplate) are present in tiddlers like [Horizontal Line].
+
+When the tags are present: the tiddlers have an effect on the wiki. When they're not, they don't.
+-->
+
+<$checkbox tiddler='Horizontal Line' tag='$:/tags/ViewTemplate'>&nbsp;Show horizontal rule under tiddler titles</$checkbox>
+
+<$checkbox tiddler='CenterStoryRiverStyle' tag='$:/tags/Stylesheet'>&nbsp;Position main "story" column in center</$checkbox>
+
+<$checkbox tiddler='SmallerSideTitle' tag='$:/tags/Stylesheet'>&nbsp;Give right sidebar a smaller title</$checkbox>
+
+<hr>
+
+!!! Some editable tiddlers which affect style and layout (not 100% sure this is useful, tho)
+
+* To adjust the editor box height, edit $:/config/TextEditor/EditorHeight/Height, and $:/config/TextEditor/EditorHeight/Mode
+
+!!! To edit this panel
+
+Edit the [[More tweaks]] tiddler.
+
+
